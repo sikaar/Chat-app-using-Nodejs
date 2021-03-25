@@ -88,7 +88,7 @@ $msgForm.addEventListener("submit", (e) => {
 // const $msgForm=document.querySelector("#user") 
 
 
-$geoLocationButton.addEventListener("click", () => {
+/*$geoLocationButton.addEventListener("click", () => {
     if (!navigator.geolocation) {
         return alert("no browser supoport")
     }
@@ -106,7 +106,7 @@ $geoLocationButton.addEventListener("click", () => {
         })
 
     })
-})
+})*/
 
 socket.emit('join', { username, room }, (error) => {
     if (error) {
