@@ -5,7 +5,7 @@ const $msgFormButton = $msgForm.querySelector('button')
 // const $msgForInput = $msgForm.querySelector('input')
 const $geoLocationButton = document.querySelector("#getLocation")
 const $messages = document.querySelector("#messages")
-const $locations = document.querySelector("#locations")
+//const $locations = document.querySelector("#locations")
 
 const msgtemplate = document.querySelector("#msg-template").innerHTML
 const loctemplate = document.querySelector("#location-template").innerHTML
@@ -46,7 +46,7 @@ socket.on("message", (msg) => {
 })
 
 
-socket.on("locationurl", (loc) => {
+/*socket.on("locationurl", (loc) => {
     console.log(loc)
     const html = Mustache.render(loctemplate, {
         username: loc.username,
@@ -57,7 +57,7 @@ socket.on("locationurl", (loc) => {
 
     $messages.insertAdjacentHTML("beforeend", html)
     autoscroll()
-})
+}) */
 
 socket.on("roomData", ({ room, users }) => {
     const html = Mustache.render(sidebartemplate, {
