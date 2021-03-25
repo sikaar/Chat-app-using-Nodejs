@@ -3,12 +3,12 @@ const $msgForm = document.querySelector("#user")
 const $msgForInput = $msgForm.querySelector('input')
 const $msgFormButton = $msgForm.querySelector('button')
 // const $msgForInput = $msgForm.querySelector('input')
-const $geoLocationButton = document.querySelector("#getLocation")
+//const $geoLocationButton = document.querySelector("#getLocation")
 const $messages = document.querySelector("#messages")
 //const $locations = document.querySelector("#locations")
 
 const msgtemplate = document.querySelector("#msg-template").innerHTML
-const loctemplate = document.querySelector("#location-template").innerHTML
+//const loctemplate = document.querySelector("#location-template").innerHTML
 const sidebartemplate = document.querySelector('#user-rooms').innerHTML
 
 const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
