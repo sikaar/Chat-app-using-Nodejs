@@ -29,8 +29,8 @@ io.on("connection", (socket) => {
             return cb(error)
         }
         socket.join(user.room)
-        socket.emit("message", generatemsg("Admin ,Welcome"))
-        socket.broadcast.to(user.room).emit("message", generatemsg(`Admin ${user.username} has joined!`))
+        socket.emit("message", generatemsg("Welcome"))
+        socket.broadcast.to(user.room).emit("message", generatemsg(`${user.username} has joined!`))
 
         io.to(user.room).emit("roomData", {
             room: user.room,
