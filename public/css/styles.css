@@ -86,11 +86,11 @@ button:disabled {
 /* Chat Page Layout */
 
 .chat {
-    display: flex;
+    /*display: flex;*/
 }
 
 .chat__sidebar {
-    height: 100vh;
+    height: 20vh;
     color: white;
     background: #333744;
     width: 225px;
